@@ -25,6 +25,10 @@ jobs:
 
       - name: Upload to S3
         run: |
+<<<<<<< HEAD
+=======
+          cd jestway
+>>>>>>> 06bfd79f46f398c15837c8b83f3330305ba56365
           aws s3 cp app.zip s3://${{ secrets.S3_BUCKET }}/app-${{ github.sha }}.zip
 
       - name: Create new application version
